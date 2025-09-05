@@ -5,7 +5,7 @@
   --light-card: #ffffff; /* White for cards */
   --light-text: #1a1a1a; /* Dark gray text */
   --light-muted: #6c757d; /* Bootstrap's muted gray */
-  --dark-bg: #404040; /* Lighter dark mode background */
+  --dark-bg: #3d3d3d; /* Lighter dark mode background */
   --dark-card: #303030; /* Slightly lighter gray for cards */
   --dark-text: #f0f0f0; /* Near white for text */
   --dark-muted: #a0a0a0; /* Muted gray for dark mode */
