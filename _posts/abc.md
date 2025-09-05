@@ -2,7 +2,7 @@
 layout: default
 title: Exploring Machine Learning Applications
 description: A deep dive into practical applications of machine learning in 2025.
-thumbnail: /assets/images/ml-applications.jpg
+thumbnail: /assets/images/projects/th_1.jpg
 date: 2025-09-05
 tags: [machine learning, AI, technology]
 ---
