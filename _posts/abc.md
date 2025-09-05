@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Exploring Machine Learning Applications
+layout: post
+title: Sample Blog Post 2
+date: 1010-09-04
 description: A deep dive into practical applications of machine learning in 2025.
 thumbnail: /assets/images/projects/th_1.jpg
-date: 2025-09-05
 tags: [machine learning, AI, technology]
 ---
 <h1 class="text-3xl font-mono font-bold mb-6">Exploring Machine Learning Applications</h1>
