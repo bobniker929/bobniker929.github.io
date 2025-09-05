@@ -1,0 +1,37 @@
+# Site settings
+title: Your Name - Software Developer
+description: A portfolio showcasing my coding projects, technical blog, and computer science expertise.
+url: "https://bobniker929.github.io" # Replace with your GitHub username
+baseurl: "" # Set to "/repo" for subdirectory deployments
+email: your.email@example.com # Optional: for contact info
+github_username: bobniker929 # Optional: for linking to GitHub in templates
+
+# Build settings
+theme: minima
+markdown: kramdown
+permalink: /blog/:title # URL structure for blog posts
+show_excerpts: true # Show excerpts on blog index
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title # URL structure for project pages
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Sass settings (for custom CSS processing)
+sass:
+  sass_dir: assets/css
+  style: compressed

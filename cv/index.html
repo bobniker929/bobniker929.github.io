@@ -1,0 +1,34 @@
+---
+layout: default
+title: Curriculum Vitae
+---
+<h1 class="text-3xl font-mono font-bold mb-6">Curriculum Vitae</h1>
+<div id="cv-content" class="prose dark:prose-invert max-w-none">
+  <h2 class="font-mono">Your Name</h2>
+  <p class="font-sans">Email: your.email@example.com | Phone: (123) 456-7890 | <a href="https://linkedin.com/in/yourname" class="text-blue-500 hover:text-blue-400">LinkedIn</a> | <a href="https://github.com/yourname" class="text-blue-500 hover:text-blue-400">GitHub</a></p>
+  
+  <h3 class="font-mono">Education</h3>
+  <p class="font-sans"><strong>B.S. in Computer Science, University Name</strong> — Year<br>Relevant coursework: Algorithms, Data Structures, Machine Learning.</p>
+  
+  <h3 class="font-mono">Experience</h3>
+  <p class="font-sans"><strong>Software Engineer, Tech Company</strong> — Year<br>Developed scalable backend systems using Python and Node.js.</p>
+  
+  <h3 class="font-mono">Skills</h3>
+  <ul class="font-sans">
+    <li>Programming: Python, JavaScript, Java</li>
+    <li>Tools: Git, Docker, AWS</li>
+  </ul>
+</div>
+<button id="download-pdf" class="mt-6 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-200 font-sans">
+  Download as PDF
+</button>
+<script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.min.js"></script>
+<script>
+  document.getElementById('download-pdf').addEventListener('click', () => {
+    const element = document.getElementById('cv-content');
+    html2pdf()
+      .set({ filename: 'assets/files/cv-{{ 'now' | date: '%Y%m%d' }}.pdf', margin: 1, jsPDF: { format: 'a4' } })
+      .from(element)
+      .save();
+  });
+</script>
